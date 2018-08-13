@@ -1,7 +1,7 @@
 blooming
 ===============================
 
-version number: 1.0.0
+version number: 1.0.2
 author: Luxebeng
 
 Overview
