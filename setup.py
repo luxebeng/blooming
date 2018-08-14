@@ -3,7 +3,7 @@ from codecs import open
 
 from setuptools import find_packages, setup
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -33,6 +33,11 @@ setup(
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
+    entry_points={
+        'console_scripts': [
+            'blooming = blooming.__main__:main'
+        ]
+    },
     include_package_data=True,
     author='Luxebeng',
     install_requires=install_requires,
