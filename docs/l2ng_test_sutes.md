@@ -75,6 +75,4 @@ QinQ/CFM/LFM/dot1X etc. will be verified with another sanity testbed.
   }
 }
 
-*** conmmand type ***
-%python3 main.py -f file_name    # file_name is upgrade image name 
 ```
