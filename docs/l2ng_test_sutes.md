@@ -55,5 +55,26 @@ Based on L2 physical interface, LLDP/GVRP can be verified.
 QinQ/CFM/LFM/dot1X etc. will be verified with another sanity testbed.
 
 ### Configuration
-TBD
 
+```
+***device information*** 
+{
+  "bj340g":{
+    "device name": "srx340g",            # device name
+    "MGT IP address": "10.208.128.161",  # login IP address
+    "port number": 22,                   # ssh login portID
+    "ssh user": "root",                  # ssh login user
+    "passwd": "Embe1mpls"                # ssh login passwd
+  },
+  "bj300a":{
+    "device name": "srx300a",
+    "MGT IP address": "10.208.128.241",
+    "port number": 22,
+    "ssh user": "root",
+    "passwd": "Embe1mpls"
+  }
+}
+
+*** conmmand type ***
+%python3 main.py -f file_name    # file_name is upgrade image name 
+```
