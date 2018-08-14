@@ -11,7 +11,7 @@ A(nother) test automation framework for network device.
 `blooming` Framework is a generic open source test automation framework for acceptance test-driven development (ATDD). users can create new  from existing ones using the same syntax that is used for creating test cases. 
 `blooming` Framework is operating system and application independent. The core framework is implemented using Python 3. 
 
-`blooming` Framework project is hosted on [GitHub](https://github.com/luxebeng/NetPys) where you can find source code, an issue tracker, and some further documentation. 
+`blooming` Framework project is hosted on [GitHub](https://github.com/luxebeng/blooming) where you can find source code, an issue tracker, and some further documentation. 
 
 Installation
 ------------
@@ -36,7 +36,7 @@ For each test case, device and configuration file are abstracted as an object. w
 For different there are command lists on devices from different vendor, so there is a SAL layer to adapt the commands for different in future. but now it's called directly.
 
 The simple sketch is as follows:
-![SW_architecture](doc/media/SW_architecture.png)
+![SW_architecture](docs/media/SW_architecture.png)
 
 Example
 -------
@@ -64,7 +64,7 @@ Example
 %python3 main.py -f file_name    # file_name is upgrade image name 
 ```
 
-There is a detail document about L2NG test suites. please refer to documents of [L2NG Test suites](./doc/l2ng_test_sutes.md).
+There is a detail document about L2NG test suites. please refer to documents of [L2NG Test suites](./docs/l2ng_test_sutes.md).
 
 Contributing
 ------------
