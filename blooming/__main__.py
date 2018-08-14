@@ -88,5 +88,3 @@ elif opt['upgrade_image']:
     imageupgrade(file)
 elif opt['l2ng_testcase']:
     l2ng_testcase()
-
-print(opt)
