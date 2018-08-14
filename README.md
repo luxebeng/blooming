@@ -7,11 +7,9 @@ author: Luxebeng
 Overview
 --------
 
-`blooming` Framework is a generic open source test automation framework for acceptance test-driven development (ATDD). users can create new  from existing ones using the same syntax that is used for creating test cases. 
+`blooming` Framework is a generic open source test automation framework for acceptance test-driven development (ATDD). which is operating system and application independent. The core framework is implemented using Python 3. 
 
-`blooming` Framework is operating system and application independent. The core framework is implemented using Python 3. 
-
-`blooming` Framework project is hosted on [GitHub](https://github.com/luxebeng/blooming) where you can find source code, an issue tracker, and some further documentation. 
+Project is hosted on [GitHub](https://github.com/luxebeng/blooming) where you can find source code, an issue tracker, and some further documentation. 
 
 Installation
 ------------
