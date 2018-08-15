@@ -4,14 +4,14 @@ This file uses docopt with the built in cmd module to realize entry point as an
 interactive command application.
 
 Usage:
-    blooming upgrade_image <image_name>
-    blooming l2ng_testcase
-    blooming (-i | --interactive)
-    blooming (-h | --help | --version)
+blooming upgrade_image <image_name>
+blooming l2ng_testcase
+blooming (-i | --interactive)
+blooming (-h | --help | --version)
 
 Options:
-    -i, --interactive  Interactive Mode
-    -h, --help  Show this screen and exit.
+-i, --interactive  Interactive Mode
+-h, --help  Show this screen and exit.
 """
 import cmd
 import sys
@@ -79,12 +79,18 @@ class MyInteractive (cmd.Cmd):
         exit()
 
 
-opt = docopt(__doc__, sys.argv[1:], version='1.0.4')
+def main():
+    opt = docopt(__doc__, sys.argv[1:], version='1.0.4')
 
-if opt['--interactive']:
-    MyInteractive().cmdloop()
-elif opt['upgrade_image']:
-    file = opt['<image_name>']
-    imageupgrade(file)
-elif opt['l2ng_testcase']:
-    l2ng_testcase()
+    if opt['--interactive']:
+        MyInteractive().cmdloop()
+    elif opt['upgrade_image']:
+        file = opt['<image_name>']
+        imageupgrade(file)
+    elif opt['l2ng_testcase']:
+        l2ng_testcase()
+
+
+if __name__ == "__main__":
+    main()
+
