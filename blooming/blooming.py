@@ -67,7 +67,7 @@ class MyInteractive (cmd.Cmd):
         imageupgrade(file)
 
     @docopt_cmd
-    def do_l2ng_testcase(self):
+    def do_l2ng_testcase(self, arg):
         """Usage: l2ng_testcase"""
 
         l2ng_testcase()
