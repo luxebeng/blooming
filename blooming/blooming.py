@@ -80,7 +80,7 @@ class MyInteractive (cmd.Cmd):
 
 
 def main():
-    opt = docopt(__doc__, sys.argv[1:], version='1.0.5')
+    opt = docopt(__doc__, sys.argv[1:], version='1.0.6')
 
     if opt['--interactive']:
         MyInteractive().cmdloop()
