@@ -1,76 +1,31 @@
 {
-  "dev1":{
-    "device name": "l2ng-ut-srx345a",
-    "MGT IP address": "10.208.132.144",
+  "bj340g":{
+    "device name": "srx340g",
+    "MGT IP address": "10.208.128.161",
     "port number": 22,
     "ssh user": "root",
     "passwd": "Embe1mpls",
     "port":{
       "ge-0/0/5":{
-        "mac address":"e8:b6:c2:cb:86:46"
+        "mac address":"02:9d:fb:a8:c2:06"
       },
       "irb":{
-        "mac address":"e8:b6:c2:cb:86:ef"
+        "mac address":"02:9d:fb:a8:c2:b0"
       }
     }
   },
-  "dev2":{
-    "device name": "l2ng-ut-srx345b",
-    "MGT IP address": "10.208.132.145",
+  "bj300a":{
+    "device name": "srx300a",
+    "MGT IP address": "10.208.128.241",
     "port number": 22,
     "ssh user": "root",
     "passwd": "Embe1mpls",
     "port":{
       "ge-0/0/5":{
-        "mac address":"e8:b6:c2:cb:86:c6"
+        "mac address":"88:a2:5e:09:0d:05"
       },
       "irb":{
-        "mac address":"e8:b6:c2:cb:87:6f"
-      }
-    }
-  },
-  "dev3":{
-    "device name": "l2ng-ut-srx320a",
-    "MGT IP address": "10.208.128.144",
-    "port number": 22,
-    "ssh user": "root",
-    "passwd": "Embe1mpls",
-    "port":{
-      "ge-0/0/5":{
-        "mac address":"40:71:83:21:96:05"
-      },
-      "irb":{
-        "mac address":"40:71:83:21:96:b0"
-      }
-    }
-  },
-  "dev4":{
-    "device name": "l2ng-ut-srx320b",
-    "MGT IP address": "10.208.128.38",
-    "port number": 22,
-    "ssh user": "root",
-    "passwd": "Embe1mpls",
-    "port":{
-      "ge-0/0/5":{
-        "mac address":"40:71:83:22:09:05"
-      },
-      "irb":{
-        "mac address":"40:71:83:22:09:b0"
-      }
-    }
-  },
-  "dev5":{
-    "device name": "l2ng-ut-srx550a",
-    "MGT IP address": "10.208.131.110",
-    "port number": 22,
-    "ssh user": "root",
-    "passwd": "Embe1mpls",
-    "port":{
-      "ge-0/0/5":{
-        "mac address":"d4:04:ff:11:aa:85"
-      },
-      "irb":{
-        "mac address":"d4:04:ff:11:ab:b0"
+        "mac address":"88:a2:5e:09:0d:b0"
       }
     }
   }

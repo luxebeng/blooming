@@ -35,7 +35,8 @@ setup(
     packages=find_packages(exclude=['docs', 'tests*']),
     entry_points={
         'console_scripts': [
-            'blooming = blooming.__main__:main'
+            # 'blooming = blooming.__main__:main'
+            'blooming = blooming.blooming:main'
         ]
     },
     include_package_data=True,

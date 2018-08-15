@@ -7,7 +7,7 @@ import json
 import getopt
 import threading
 
-from dev_parser import Dev_Entry
+from .dev_parser import Dev_Entry
 
 
 def file_parser():

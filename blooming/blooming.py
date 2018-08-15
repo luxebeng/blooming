@@ -18,8 +18,8 @@ import sys
 
 from docopt import DocoptExit, docopt
 
-from image_upgrade import imageupgrade
-from l2ng_testcase import l2ng_testcase
+from .image_upgrade import imageupgrade
+from .l2ng_testcase import l2ng_testcase
 
 
 def docopt_cmd(func):
@@ -93,4 +93,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

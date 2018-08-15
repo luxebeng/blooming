@@ -1,5 +1,5 @@
-from dev_parser import Dev_Entry
-from l2ng_conf_parser import ConfParser
+from .dev_parser import Dev_Entry
+from .l2ng_conf_parser import ConfParser
 
 
 def ping_l3_intf(host_dev, dst_dev, dst_intf_name):

@@ -11,7 +11,7 @@ import threading
 
 import paramiko
 
-import commands_jnpr
+from . import commands_jnpr
 
 
 class Dev_Entry:
