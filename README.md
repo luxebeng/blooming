@@ -39,6 +39,12 @@ The simple sketch is as follows:
 Example
 -------
 
+at the root folder, there is 2 json files are provided.
+
+`dev.json:`       which define the device information. which is static for a special devices.
+
+`xxxx_conf.json`: which is config related information. which is depended on the topology of testbed and configuration.
+
 There is a detail document about L2NG test suites. please refer to documents of [L2NG Test suites](./docs/l2ng_test_sutes.md).
 
 Contributing
