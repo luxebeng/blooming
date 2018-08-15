@@ -79,7 +79,7 @@ class MyInteractive (cmd.Cmd):
         exit()
 
 
-opt = docopt(__doc__, sys.argv[1:], version='1.0.3')
+opt = docopt(__doc__, sys.argv[1:], version='1.0.4')
 
 if opt['--interactive']:
     MyInteractive().cmdloop()
