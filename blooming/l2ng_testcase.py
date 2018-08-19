@@ -85,25 +85,37 @@ def l2ng_testcase():
     # ping irb interface between the different devices
     # the parameter is "host device, dst device and dst L3 interface"
     print("******** Ping Test Case ********")
-    ping_l3_intf("bj340g", "bj300a", "irb.20")
-    ping_l3_intf("bj300a", "bj340g", "irb.20")
+    ping_l3_intf("l2ng-ut-srx345a", "l2ng-ut-srx320a", "irb.2018")
+    ping_l3_intf("l2ng-ut-srx320a", "l2ng-ut-srx345a", "irb.2018")
+    ping_l3_intf("l2ng-ut-srx550a", "l2ng-ut-srx320a", "irb.2018")
+    ping_l3_intf("l2ng-ut-srx320a", "l2ng-ut-srx550a", "irb.2018")
+    ping_l3_intf("l2ng-ut-srx320b", "l2ng-ut-srx345a", "irb.2018")
+    ping_l3_intf("l2ng-ut-srx345a", "l2ng-ut-srx320b", "irb.2018")
 
     # aggregation interface test case
     print("******** AE Interface Test Case ********")
-    verify_ae_interface("bj340g", "ae0")
+    verify_ae_interface("l2ng-ut-srx345a", "ge-5/0/8")
+    verify_ae_interface("l2ng-ut-srx320a", "ge-0/0/6")
 
     # lldp testcase
     print("******** LLDP Test Case ********")
-    verify_lldp("bj340g", "ge-0/0/5")
-    verify_lldp("bj300a", "ge-0/0/5")
+    verify_lldp("l2ng-ut-srx345a", "ge-5/0/8")
+    verify_lldp("l2ng-ut-srx320a", "ge-0/0/6")
 
     # spanning tree testcase
     print("******** STP Test Case ********")
-    verify_stp("bj340g", "20", "ge-0/0/5", "FWD")
-    verify_stp("bj340g", "20", "ae0", "FWD")
+    verify_stp("l2ng-ut-srx345a", "2018", "ge-5/0/8", "FWD")
+    verify_stp("l2ng-ut-srx345a", "2018", "ae0", "FWD")
+    verify_stp("l2ng-ut-srx320a", "2018", "ge-0/0/5", "FWD")
+    verify_stp("l2ng-ut-srx320a", "2018", "ge-0/0/6", "FWD")
+    verify_stp("l2ng-ut-srx550a", "2018", "ae0", "FWD")
+    verify_stp("l2ng-ut-srx550a", "2018", "ge-6/0/1", "BLK")
 
     # verify mac learning test suite.
     # mac learning only on L2 interface
     print("******** Mac Learning Test Case ********")
-    verify_mac_learning("bj340g", "v20", "ge-0/0/5")
-    verify_mac_learning("bj300a", "v20", "ge-0/0/5")
+    verify_mac_learning("l2ng-ut-srx345a", "v2018", "ae0")
+    verify_mac_learning("l2ng-ut-srx345a", "v2018", "ge-5/0/8")
+    verify_mac_learning("l2ng-ut-srx345a", "v2018", "ge-5/0/15")
+    verify_mac_learning("l2ng-ut-srx320a", "v2018", "ge-0/0/6")
+    verify_mac_learning("l2ng-ut-srx550a", "v2018", "ae0")

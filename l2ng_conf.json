@@ -1,31 +1,112 @@
 {
-  "bj340g":{
+  "l2ng-ut-srx345a":{
     "l2 port":{
-      "ge-0/0/5":{
+      "ae0":{
         "peer":{
-          "dev":"bj300a",
-          "port":"ge-0/0/5"
+          "dev":"l2ng-ut-srx550a",
+          "port":"ae0"
+        }
+      },
+      "ge-5/0/8":{
+        "peer":{
+          "dev":"l2ng-ut-srx320a",
+          "port":"ge-0/0/6"
+        }
+      },
+      "ge-5/0/15":{
+        "peer":{
+          "dev":"l2ng-ut-srx320b",
+          "port":"ge-0/0/7"
         }
       }
     },
     "l3 intf":{
-      "irb.20":{
-        "ip addr":"20.0.0.20"
+      "irb.2018":{
+        "ip addr":"20.18.34.50"
       }
     }
   },
-  "bj300a":{
+  "dev2":{
     "l2 port":{
-      "ge-0/0/5":{
+      "ae0":{
         "peer":{
-          "dev":"bj340g",
-          "port":"ge-0/0/5"
+          "dev":"l2ng-ut-srx550a",
+          "port":"ae0"
+        }
+      },
+      "ge-5/0/8":{
+        "peer":{
+          "dev":"l2ng-ut-srx320a",
+          "port":"ge-0/0/6"
+        }
+      },
+      "ge-5/0/15":{
+        "peer":{
+          "dev":"l2ng-ut-srx320b",
+          "port":"ge-0/0/7"
         }
       }
     },
     "l3 intf":{
       "irb.20":{
         "ip addr":"20.0.0.10"
+      }
+    }
+  },
+  "l2ng-ut-srx320a":{
+    "l2 port":{
+      "ge-0/0/5":{
+        "peer":{
+          "dev":"l2ng-ut-srx550a",
+          "port":"ge-6/0/1"
+        }
+      },
+      "ge-0/0/6":{
+        "peer":{
+          "dev":"l2ng-ut-srx345a",
+          "port":"ge-5/0/8"
+        }
+      }
+    },
+    "l3 intf":{
+      "irb.2018":{
+        "ip addr":"20.18.32.10"
+      }
+    }
+  },
+  "l2ng-ut-srx320b":{
+    "l2 port":{
+      "ge-0/0/7":{
+        "peer":{
+          "dev":"l2ng-ut-srx345a",
+          "port":"ge-5/0/15"
+        }
+      }
+    },
+    "l3 intf":{
+      "irb.2018":{
+        "ip addr":"20.18.32.11"
+      }
+    }
+  },
+  "l2ng-ut-srx550a":{
+    "l2 port":{
+      "ae0":{
+        "peer":{
+          "dev":"l2ng-ut-srx345a",
+          "port":"ae0"
+        }
+      },
+      "ge-6/0/1":{
+        "peer":{
+          "dev":"l2ng-ut-srx320a",
+          "port":"ge-0/0/5"
+        }
+      }
+    },
+    "l3 intf":{
+      "irb.2018":{
+        "ip addr":"20.18.55.10"
       }
     }
   }
