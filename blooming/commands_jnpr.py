@@ -6,6 +6,8 @@ implemented specifically for each vendor,so the command line need to be
 modified for other vendor devices. but code is common.
 In future, this can also be commonized with platfom independently.
 """
+from __future__ import print_function
+
 import select
 
 # import threading
