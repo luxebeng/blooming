@@ -36,12 +36,38 @@ For different there are command lists on devices from different vendor, so there
 The simple sketch is as follows:
 ![SW_architecture](docs/media/SW_architecture.png)
 
+How to use
+----------
+
+1 Install the tool at first
+  `pip install blooming`
+ 
+2 Configuration file
+  Copy configuration file `dev.json` and `l2ng_conf.json` to the folder where the image is.
+ 
+3 enter the command for upgrade the image and run the test script
+```
+[benliu@hwpxe ~]$ blooming -i
+Welcome to my interactive program! (type help for a list of commands.)
+(blooming) help
+ 
+Documented commands (type help <topic>):
+========================================
+help  l2ng_testcase  quit  upgrade_image
+ 
+(blooming) help l2ng_testcase
+Usage: l2ng_testcase
+(blooming) help upgrade_image
+Usage: upgrade_image <image_name>
+(blooming)
+```
+
 Example
 -------
 
 at the root folder, there is 2 json files are provided.
 
-`dev.json:`       which define the device information. which is static for a special devices.
+`dev.json:`    which define the device information. which is static for a special devices.
 ```
 ***device information*** 
 {

@@ -55,7 +55,8 @@ Based on L2 physical interface, LLDP/GVRP can be verified.
 QinQ/CFM/LFM/dot1X etc. will be verified with another sanity testbed.
 
 ### Configuration
-
+* dev.json 
+   the file which define the device related information
 ```
 ***device information*** 
 {
@@ -74,5 +75,40 @@ QinQ/CFM/LFM/dot1X etc. will be verified with another sanity testbed.
     "passwd": "Embe1mpls"
   }
 }
-
 ```
+* l2ng_conf.json
+  the file which define the configuration information.
+
+
+### Test result on the testbed
+```
+(blooming) l2ng_testcase
+******** Ping Test Case ********
+ping from l2ng-ut-srx345a to l2ng-ut-srx320a successfully
+ping from l2ng-ut-srx320a to l2ng-ut-srx345a successfully
+ping from l2ng-ut-srx550a to l2ng-ut-srx320a successfully
+ping from l2ng-ut-srx320a to l2ng-ut-srx550a successfully
+ping from l2ng-ut-srx320b to l2ng-ut-srx345a successfully
+ping from l2ng-ut-srx345a to l2ng-ut-srx320b successfully
+******** AE Interface Test Case ********
+ae interface test for l2ng-ut-srx345a is passed successfully
+ae interface test for l2ng-ut-srx320a is passed successfully
+******** LLDP Test Case ********
+lldp test case for l2ng-ut-srx345a is passed successfully
+lldp test case for l2ng-ut-srx320a is passed successfully
+******** STP Test Case ********
+stp test case verified successfully for l2ng-ut-srx345a, ge-5/0/8
+stp test case verified successfully for l2ng-ut-srx345a, ae0
+stp test case verified successfully for l2ng-ut-srx320a, ge-0/0/5
+stp test case verified successfully for l2ng-ut-srx320a, ge-0/0/6
+stp test case verified successfully for l2ng-ut-srx550a, ae0
+stp test case verified successfully for l2ng-ut-srx550a, ge-6/0/1
+******** Mac Learning Test Case ********
+mac learning test case verified successfully for l2ng-ut-srx345a
+mac learning test case verified successfully for l2ng-ut-srx345a
+mac learning test case verified successfully for l2ng-ut-srx345a
+mac learning test case verified successfully for l2ng-ut-srx320a
+(blooming) quit
+Good Bye!
+```
+
