@@ -62,8 +62,8 @@ Usage: upgrade_image <image_name>
 (blooming)
 ```
 
-Example
--------
+Configuration file
+``````````````````
 
 at the root folder, there is 2 json files are provided.
 
