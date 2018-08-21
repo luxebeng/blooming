@@ -63,7 +63,7 @@ Usage: upgrade_image <image_name>
 ```
 
 Configuration file
-^^^^^^^^^^^^^^^^^^
+++++++++++++++++++
 
 at the root folder, there is 2 json files are provided.
 
